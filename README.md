@@ -30,20 +30,18 @@ Cada misión visualiza paso a paso la ejecución del algoritmo sobre un grafo do
 ## Estructura de carpetas
 
 ```
-ciberacosogame/
+ciberacoso-game-grafos/
 ├── README.md
 ├── .gitignore
-└── CiberAcosoGame/
-    ├── CiberAcosoGame.iml        # Módulo de IntelliJ IDEA
-    └── src/
-        ├── Main.java             # Punto de entrada
-        ├── controller/           # GameController (progreso), MissionController (ejecuta algoritmos)
-        ├── model/
-        │   ├── graph/            # Graph, Node, Edge
-        │   └── algorithms/       # BFS, DFS, Dijkstra, Kruskal, FordFulkerson
-        ├── view/                 # MainWindow, IntroPanel, MenuPanel, MissionNPanel, FinalMissionPanel, GraphPanel, HelpDialog
-        │   └── components/       # StepCard, VisualLogPanel
-        └── util/                 # Constants (colores, fuentes, nombres), GraphGenerator
+└── src/
+    ├── Main.java             # Punto de entrada
+    ├── controller/           # GameController (progreso), MissionController (ejecuta algoritmos)
+    ├── model/
+    │   ├── graph/            # Graph, Node, Edge
+    │   └── algorithms/       # BFS, DFS, Dijkstra, Kruskal, FordFulkerson
+    ├── view/                 # MainWindow, IntroPanel, MenuPanel, MissionNPanel, FinalMissionPanel, GraphPanel, HelpDialog
+    │   └── components/       # StepCard, VisualLogPanel
+    └── util/                 # Constants (colores, fuentes, nombres), GraphGenerator
 ```
 
 Arquitectura: patrón MVC (modelo – vista – controlador).
@@ -60,7 +58,8 @@ Arquitectura: patrón MVC (modelo – vista – controlador).
 ### Desde la terminal
 
 ```bash
-cd CiberAcosoGame
+git clone https://github.com/Daniela2106-az/ciberacoso-game-grafos.git
+cd ciberacoso-game-grafos
 mkdir -p out
 javac -d out $(find src -name "*.java")
 java -cp out Main
@@ -68,8 +67,8 @@ java -cp out Main
 
 ### Desde IntelliJ IDEA
 
-1. Abre la carpeta `CiberAcosoGame` como proyecto (incluye `CiberAcosoGame.iml`).
-2. Configura un JDK 14+ en *Project Structure*.
+1. Abre la carpeta del repositorio (*File > Open*).
+2. En *Project Structure* configura un JDK 14+ y marca `src` como *Sources Root*.
 3. Ejecuta la clase `Main`.
 
 ### Jugando
