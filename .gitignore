@@ -1,0 +1,26 @@
+# Compilados
+out/
+bin/
+*.class
+*.jar
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.ipr
+
+# Eclipse / VS Code / NetBeans
+.classpath
+.project
+.settings/
+.vscode/
+nbproject/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Secretos y logs
+.env
+*.log
+hs_err_pid*
